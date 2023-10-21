@@ -1,2 +1,2 @@
 # DHBW-UniLife
-DHBW Studenten App
+DHBW Studenten-App von Aaron, Andreas, Davy, Dennis, Johann und Kirill
