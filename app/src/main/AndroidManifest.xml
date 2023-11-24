@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--Hier befinden sich die Berechtigungen die unsere App benötigt-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--Hier befinden sich die allgemeinen Infos der App-->
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +18,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light"
         tools:targetApi="31">
+
+        <!--Jede Activity hat jeweils einen Verweis in userem Manifest. Die .MainActivity hat dazu noch das Startseiten Attribut-->
+
+        <!-- Main Datei trägt das Launcher Attribut und wird zu Beginn ausgeführt-->
         <activity
             android:name=".MainActivity"
             android:exported="true"
