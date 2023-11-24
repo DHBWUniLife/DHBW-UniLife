@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Diese Activity ist dazu zuständig, rnv Verbindungen anzuzeigen-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grau"
+    tools:context=".rnv.RnvActivity">
+
+    <TextView
+        android:id="@+id/textViewTitel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Temporäre RNV Activity zum testen der Netzwerkfunktion"
+        android:background="@color/rot"
+        android:padding="10dp"
+        android:fontFamily="@font/generis_serif_regular"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/rot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitel" />
+
+    <TextView
+        android:id="@+id/textViewTitelRichtungMannheim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/generis_serif_regular"
+        android:padding="10dp"
+        android:text="Nächste Abfahrt Richtung Mannheim:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitel" />
+
+    <TextView
+        android:id="@+id/textViewRichtungMannheimAbfahrtZeit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:fontFamily="@font/generis_serif_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitelRichtungMannheim" />
+
+    <TextView
+        android:id="@+id/textViewRichtungMannheimAbfahrtZeitEcht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:fontFamily="@font/generis_serif_bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewRichtungMannheimAbfahrtZeit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitelRichtungMannheim" />
+
+    <TextView
+        android:id="@+id/textViewTitelRichtungHeidelberg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Nächste Abfahrt Richtung Heidelberg:"
+        android:fontFamily="@font/generis_serif_regular"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRichtungMannheimAbfahrtZeit" />
+
+    <TextView
+        android:id="@+id/textViewRichtungHeidelbergAbfahrtZeit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:fontFamily="@font/generis_serif_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitelRichtungHeidelberg" />
+
+    <TextView
+        android:id="@+id/textViewRichtungHeidelbergAbfahrtZeitEcht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:fontFamily="@font/generis_serif_bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewRichtungHeidelbergAbfahrtZeit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitelRichtungHeidelberg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
